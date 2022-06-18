@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Welcome to the world of coding!</h1>
-<h3>Your first step into becoming a developer is to choose your first language.</h3>
+<h3>Your first step into becoming a developer is to choose your first programming language.</h3>
 <p>But which one? There are so many! If you hop online and see what other developers are suggesting you might find some good insight. If you compare that to what employers are looking for hoping to narrow it down a little it'll probably make you decision even harder. That's why I've put together a little quiz to help you make your choice a little easier. So without further ado, let's begin!</p>
 
 <form id="quiz" name="quiz">
@@ -40,7 +40,12 @@
 <input type="radio" id="mc" name="question5" value="burgers">Cheeseburgers<br>
 <input type="radio" id="mc" name="question5" value="noodles">Noodles<br>
 <input type="radio" id="mc" name="question5" value="pizza">Pizza<br>
-
+<h2>The first language you should learn is...</h2>
+<input id="button" type="button" value="Show Me!" onclick="check();">
 </form>
+
+<div id="after_submit">
+<p id="number_correct">JavaScript!</p>
+</div>
 </body>
 </html>
