@@ -10,77 +10,82 @@ function check() {
 
   // Question1
   if (question1 == "yellow") {
-    correct++;
+    correct = 5;
   }
   if (question1 == "green") {
-    correct++;
+    correct = 3;
   }
   if (question1 == "blue") {
-    correct++;
+    correct = 1;
   }
   if (question1 == "black") {
-    correct++;
+    correct = 2;
   }
 
 // Question2
 if (question2 == "losAngeles") {
-  correct++;
+  correct = 4;
 }
 if (question2 == "portland") {
-  correct++;
+  correct = 3;
 }
 if (question2 == "austin") {
-  correct++;
+  correct = 2;
 }
 if (question2 == "newYorkCity") {
-  correct++;
+  correct = 5;
 }
 
 // Question3
 if (question3 == "jazz") {
-  correct++;
+  correct = 2;
 }
 if (question3 == "punkRock") {
-  correct++;
+  correct = 1;
 }
 if (question3 == "hipHop") {
-  correct++;
+  correct = 3;
 }
 if (question3 == "classical") {
-  correct++;
+  correct = 4;
 }
 
 // Question4
 if (question4 == "comedy") {
-  correct++;
+  correct = 5;
 }
 if (question4 == "action") {
-  correct++;
+  correct = 1;
 }
 if (question4 == "horror") {
-  correct++;
+  correct = 2;
 }
 if (question4 == "sci-fi") {
-  correct++;
+  correct = 4;
 }
 
 //Question5
 if (question5 == "steak") {
-  correct++;
+  correct = 3;
 }
 if (question5 == "burgers") {
-  correct++;
+  correct = 4;
 }
 if (question5 == "noodles") {
-  correct++;
+  correct = 1;
 }
 if (question5 == "pizza") {
-  correct++;
+  correct = 5;
 }
+
+// Scoring
 let message = ["JavaScript", "Python", "Solidity", "C++", "PHP"];
 
 let range;
 
+if (correct = 5) {
+  range = 5;
+}
 if (correct < 5) {
   range = 4;
 }
@@ -93,15 +98,8 @@ if (correct < 3) {
 if (correct < 2) {
   range = 1;
 }
-if (correct < 1) {
-  range = 0;
-}
   document.getElementById("after_submit").style.visibility="visible";
 
-  document.getElementById("messsage").innerHTML = message[range];
+  document.getElementById("messsage").innerHTML = "message[range]";
   document.getElementById("number_correct").innerHTML = "You got " + correct + " correct";
 }
-
-
-//User Interface Logic
-
