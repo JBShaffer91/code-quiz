@@ -2,58 +2,75 @@
 <html lang="en-US">
 <head>
   <title>Watch Your Language</title>
-  <script src="js/scripts.js"></script>
+  <script src="js/scripts.js">
+  window.onload = function() {
+    what();
+    function what() {
+      document.getElementById('message').innerHTML = 'message';
+    };
+  }
+  </script>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <h1 class="header">Which programming language should you learn first?</h1>
-<h3>Your first step into becoming a developer is to choose your first programming language.</h3>
-<p>But which one? There are so many! If you hop online and see what other developers are suggesting you might find some good insight. If you compare that to what employers are looking for hoping to narrow it down a little it'll probably make you decision even harder. That's why I've put together a little quiz to help you make your choice a little easier. So without further ado, let's begin!</p>
+<h3>Your first step towards becoming a developer is to choose your first programming language.</h3>
+<p>But which one? There are so many! If you hop online and see what other developers are suggesting you might find some good insight. If you compare that to what employers are looking for hoping to narrow it down a little, it could make your decision even harder. That's why I've put together this quiz, so without further ado let's begin!</p>
 
 <form id="quiz" name="quiz">
-<div>
-<p>1: What is your favorite color?</p>
-<input type="radio" id="mc" name="question1" value="yellow">Yellow<br>
-<input type="radio" id="mc" name="question1" value="green">Green<br>
-<input type="radio" id="mc" name="question1" value="blue">Blue<br>
-<input type="radio" id="mc" name="question1" value="black">Black<br>
-</div>
-<div>
-<p>2: What is your favorite city?</p>
-<input type="radio" id="mc" name="question2" value="losAngeles">Los Angeles<br>
-<input type="radio" id="mc" name="question2" value="portland">Portland<br>
-<input type="radio" id="mc" name="question2" value="austin">Austin<br>
-<input type="radio" id="mc" name="question2" value="newYorkCity">New York City<br>
-</div>
-<div>
-<p>3: What is your favorite music genre?</p>
-<input type="radio" id="mc" name="question3" value="jazz">Jazz<br>
-<input type="radio" id="mc" name="question3" value="punkRock">Punk Rock<br>
-<input type="radio" id="mc" name="question3" value="hipHop">Hip Hop<br>
-<input type="radio" id="mc" name="question3" value="classical">Classical<br>
-</div>
-<div>
-<p>4: What is your favorite movie genre?</p>
-<input type="radio" id="mc" name="question4" value="comedy">Comedy<br>
-<input type="radio" id="mc" name="question4" value="action">Action<br>
-<input type="radio" id="mc" name="question4" value="horror">Horror<br>
-<input type="radio" id="mc" name="question4" value="sci-fi">Sci-Fi<br>
-</div>
-<div>
-<p>5: What is your favorite food?</p>
-<input type="radio" id="mc" name="question5" value="steak">Steak<br>
-<input type="radio" id="mc" name="question5" value="burgers">Cheeseburgers<br>
-<input type="radio" id="mc" name="question5" value="noodles">Noodles<br>
-<input type="radio" id="mc" name="question5" value="pizza">Pizza<br>
-</div>
+  <div>
+    <p>1: What is your favorite color?</p>
+      <input type="radio" id="mc" name="question1" value="l1">Green<br>
+      <input type="radio" id="mc" name="question1" value="l2">Blue<br>
+      <input type="radio" id="mc" name="question1" value="l3">Black<br>
+  </div>
+  <div>
+    <p>2: What is your favorite city?</p>
+      <input type="radio" id="mc" name="question2" value="l1">Los Angeles<br>
+      <input type="radio" id="mc" name="question2" value="l2">Portland<br>
+      <input type="radio" id="mc" name="question2" value="l3">New York City<br>
+  </div>
+  <div>
+    <p>3: What is your favorite music genre?</p>
+      <input type="radio" id="mc" name="question3" value="l1">Jazz<br>
+      <input type="radio" id="mc" name="question3" value="l2">Punk Rock<br>
+      <input type="radio" id="mc" name="question3" value="l3">Hip Hop<br>
+  </div>
+  <div>
+    <p>4: What is your favorite movie genre?</p>
+      <input type="radio" id="mc" name="question4" value="l1">Comedy<br>
+      <input type="radio" id="mc" name="question4" value="l2">Horror<br>
+      <input type="radio" id="mc" name="question4" value="l3">Sci-Fi<br>
+  </div>
+  <div>
+    <p>5: What is your favorite food?</p>
+      <input type="radio" id="mc" name="question5" value="l1">Steak<br>
+      <input type="radio" id="mc" name="question5" value="l2">Cheeseburgers<br>
+      <input type="radio" id="mc" name="question5" value="l3">Pizza<br>
+  </div>
+
 <h2>The first language you should learn is...</h2>
 </form>
 
-<input id="button" type="button" value="Show Me!" onclick="check();">
+<div class="container">
+  <div id="l1">
+    <h2>JavaScript</h2>
+  </div>
+  <div id="l2">
+    <h2>Python</h2>
+  </div>
+  <div id="l3">
+    <h2>Solidity</h2>
+  </div>
+</div>
+
+<div>
+<input id="button" type="button" value="Show Me!" onclick="check()";>
+</div>
 
 <div id="after_submit">
-<p id="message"></p>
 <p id="number_correct"></p>
+<p id="message"></p>
 </div>
 
 </body>

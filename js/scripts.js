@@ -7,99 +7,83 @@ function check() {
   let question4 = document.quiz.question4.value;
   let question5 = document.quiz.question5.value;
   let correct = 0
+  
 
   // Question1
-  if (question1 == "yellow") {
-    correct = 5;
-  }
-  if (question1 == "green") {
-    correct = 3;
-  }
-  if (question1 == "blue") {
+  if (question1 === "l1") {
     correct = 1;
   }
-  if (question1 == "black") {
+  if (question1 === "l2") {
     correct = 2;
+  }
+  if (question1 === "l3") {
+    correct = 3;
   }
 
 // Question2
-if (question2 == "losAngeles") {
-  correct = 4;
+if (question2 === "l1") {
+  correct = 1;
 }
-if (question2 == "portland") {
-  correct = 3;
-}
-if (question2 == "austin") {
+if (question2 === "l2") {
   correct = 2;
 }
-if (question2 == "newYorkCity") {
-  correct = 5;
+if (question2 === "l3") {
+  correct = 3;
 }
 
 // Question3
-if (question3 == "jazz") {
-  correct = 2;
-}
-if (question3 == "punkRock") {
+if (question3 === "l1") {
   correct = 1;
 }
-if (question3 == "hipHop") {
-  correct = 3;
+if (question3 === "l2") {
+  correct = 2;
 }
-if (question3 == "classical") {
-  correct = 4;
+if (question3 === "l3") {
+  correct = 3;
 }
 
 // Question4
-if (question4 == "comedy") {
-  correct = 5;
-}
-if (question4 == "action") {
+if (question4 === "l1") {
   correct = 1;
 }
-if (question4 == "horror") {
+if (question4 === "l2") {
   correct = 2;
 }
-if (question4 == "sci-fi") {
-  correct = 4;
+if (question4 === "l3") {
+  correct = 3;
 }
 
 //Question5
-if (question5 == "steak") {
-  correct = 3;
-}
-if (question5 == "burgers") {
-  correct = 4;
-}
-if (question5 == "noodles") {
+if (question5 === "l1") {
   correct = 1;
 }
-if (question5 == "pizza") {
-  correct = 5;
+if (question5 === "l2") {
+  correct = 2;
+}
+if (question5 === "l3") {
+  correct = 3;
 }
 
 // Scoring
-let message = ["JavaScript", "Python", "Solidity", "C++", "PHP"];
+let message = ["JavaScript", "Python", "Solidity"];
 
 let range;
 
-if (correct = 5) {
-  range = 5;
-}
-if (correct < 5) {
-  range = 4;
-}
-if (correct < 4) {
+if (correct === 3) {
   range = 3;
 }
-if (correct < 3) {
+if (correct === 2) {
   range = 2;
 }
-if (correct < 2) {
+if (correct === 1) {
   range = 1;
 }
   document.getElementById("after_submit").style.visibility="visible";
 
-  document.getElementById("messsage").innerHTML = "message[range]";
-  document.getElementById("number_correct").innerHTML = "You got " + correct + " correct";
+  document.getElementById("number_correct").innerHTML = "You got " + correct + " correct!";
+
+  document.querySelector("#message").addEventListener("check()", function(event) {
+    document.getElementById("button").innerHTML+= "Sorry! <code>preventDefault()</code> won't let you check this!<br>";
+    event.preventDefault();
+  }, false);
 }

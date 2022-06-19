@@ -2,15 +2,20 @@ body {
   font-family:Arial, Helvetica, sans-serif;
   font-weight: bolder;
   text-shadow: black;
-  text-indent: inherit;
+  text-align: center;
   color:rgb(251, 250, 253);
   background-image: url(cassette-futurism.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: inherit;
+  padding: auto;
 }
 
 #after_submit {
-  visibility:hidden;
+  visibility:hiddem;
+}
+
+#l1, #l2, #l3 {
+  display:none
 }
 
