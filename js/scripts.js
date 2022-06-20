@@ -1,89 +1,61 @@
-// Business Logic
-function check() {
+const startButton = document.getElementById('start-btn');
+const questionContainerElement = document.getElementById('question-container')
+const questionElement = getElementById('question')
+const answerButtonsElement = document.getElementById('answer-buttons')
 
-  let question1 = document.quiz.question1.value;
-  let question2 = document.quiz.question2.value;
-  let question3 = document.quiz.question3.value;
-  let question4 = document.quiz.question4.value;
-  let question5 = document.quiz.question5.value;
-  let correct = 0
-  
+startButton.addEventListener('click', startQuiz)
 
-  // Question1
-  if (question1 === "l1") {
-    correct = 1;
-  }
-  if (question1 === "l2") {
-    correct = 2;
-  }
-  if (question1 === "l3") {
-    correct = 3;
-  }
+startButton.classList.add('hide')
+currentQuestionIndex = 0
 
-// Question2
-if (question2 === "l1") {
-  correct = 1;
-}
-if (question2 === "l2") {
-  correct = 2;
-}
-if (question2 === "l3") {
-  correct = 3;
+
+function startQuiz() {
+  consol.log('Started')
+  startButton.classList.add('hide')
+  questionContainerElement.classList.remove('hide')
+  setNextQuestion()
 }
 
-// Question3
-if (question3 === "l1") {
-  correct = 1;
-}
-if (question3 === "l2") {
-  correct = 2;
-}
-if (question3 === "l3") {
-  correct = 3;
+function setNextQuestion() {
+  showQuestion(currentQuestionIndex)
 }
 
-// Question4
-if (question4 === "l1") {
-  correct = 1;
-}
-if (question4 === "l2") {
-  correct = 2;
-}
-if (question4 === "l3") {
-  correct = 3;
+function showQuestion(question) {
+  questionElement.innerText = question.question
 }
 
-//Question5
-if (question5 === "l1") {
-  correct = 1;
-}
-if (question5 === "l2") {
-  correct = 2;
-}
-if (question5 === "l3") {
-  correct = 3;
+function selectAnswer() {
+
 }
 
-// Scoring
-let message = ["JavaScript", "Python", "Solidity"];
+const questions = {
+    question: 'What is your favorite color?'
+    answers: 
+      {text: 'Red'}
+      {text: 'Blue'}
+      {text: 'Black'}
 
-let range;
+    question: 'What is your favorite movie genre?'
+    answers:
+      {text: 'Comedy'}
+      {text: 'Horror'}
+      {text: 'Sci-Fi'}
 
-if (correct === 3) {
-  range = 3;
-}
-if (correct === 2) {
-  range = 2;
-}
-if (correct === 1) {
-  range = 1;
-}
-  document.getElementById("after_submit").style.visibility="visible";
+    question: 'What is your favorite music genre?'
+    answers:
+      {text: 'Punk Rock'}
+      {text: 'Metal'}
+      {text: 'Hip Hop'}
 
-  document.getElementById("number_correct").innerHTML = "You got " + correct + " correct!";
+    question: 'What is your favorite city?'
+    answers: 
+      {text: 'Los Angeles, CA'}
+      {text: 'Portland, OR'}
+      {text: 'New York City, NY'}
 
-  document.querySelector("#message").addEventListener("check()", function(event) {
-    document.getElementById("button").innerHTML+= "Sorry! <code>preventDefault()</code> won't let you check this!<br>";
-    event.preventDefault();
-  }, false);
+    question: 'Who is your favorite superhero?'
+    answers:
+      {text: 'Spider-Man'}
+      {text: 'Thor'}
+      {text: 'Hulk'}
 }
