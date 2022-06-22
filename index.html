@@ -2,30 +2,63 @@
 <html lang="en-US">
 <head>
   <title>Watch Your Language</title>
-  <script src="js/scripts.js">
-  window.onload = function() {
-    what();
-    function what() {
-      document.getElementById('message').innerHTML = 'message';
-    };
-  }
-  </script>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="scripts.js" href="js/scripts.js">
+  <script src="js/scripts.js"></script>
 </head>
 <body>
 <h1 class="header">Which programming language should you learn first?</h1>
 <h3>Your first step towards becoming a developer is to choose your first programming language.</h3>
 <p>But which one? There are so many! If you hop online and see what other developers are suggesting you might find some good insight. If you compare that to what employers are looking for hoping to narrow it down a little, it could make your decision even harder. That's why I've put together this quiz, so without further ado let's begin!</p>
-
-<div class="container">
-  <div id="question=container" class="hide"></div>
-  <div id="question">Question</div>
-  <div id="answer-buttons" class="btn-grid">
-    <button class="btn">Answer 1</button>
-    <button class="btn">Answer 2</button>
-    <button class="btn">Answer 3</button>
+<form id="quiz" name="quiz"></form>
+ <div>
+    <p>1: What is your favorite color?</p>
+      <input type="radio" id="mc" name="question1" value="l1">Green<br>
+      <input type="radio" id="mc" name="question1" value="l2">Blue<br>
+      <input type="radio" id="mc" name="question1" value="l3">Black<br>
   </div>
-  <div class="controls"></div>
-  <button id="start-btn" class="start-btn btn">Start</button>
-  <button id="next-btn" class="next-btn btn hide">Next</button>
+  <div>
+    <p>2: What is your favorite city?</p>
+      <input type="radio" id="mc" name="question2" value="l1">Los Angeles<br>
+      <input type="radio" id="mc" name="question2" value="l2">Portland<br>
+      <input type="radio" id="mc" name="question2" value="l3">New York City<br>
+  </div>
+  <div>
+    <p>3: What is your favorite music genre?</p>
+      <input type="radio" id="mc" name="question3" value="l1">Jazz<br>
+      <input type="radio" id="mc" name="question3" value="l2">Punk Rock<br>
+      <input type="radio" id="mc" name="question3" value="l3">Hip Hop<br>
+  </div>
+  <div>
+    <p>4: What is your favorite movie genre?</p>
+      <input type="radio" id="mc" name="question4" value="l1">Comedy<br>
+      <input type="radio" id="mc" name="question4" value="l2">Horror<br>
+      <input type="radio" id="mc" name="question4" value="l3">Sci-Fi<br>
+  </div>
+  <div>
+    <p>5: What is your favorite food?</p>
+      <input type="radio" id="mc" name="question5" value="l1">Steak<br>
+      <input type="radio" id="mc" name="question5" value="l2">Cheeseburgers<br>
+      <input type="radio" id="mc" name="question5" value="l3">Pizza<br>
+  </div>
+<h2>The first language you should learn is...</h2>
+</form>
+<div class="container">
+  <div id="l1">
+    <h2>JavaScript</h2>
+  </div>
+  <div id="l2">
+    <h2>Python</h2>
+  </div>
+  <div id="l3">
+    <h2>Solidity</h2>
+  </div>
 </div>
+<div>
+<input id="button" type="button" value="Show Me!" onclick="check()";>
+</div>
+<div id="after_submit">
+<p id="message"></p>
+<p id="number_correct"></p>
+<p id="message"></p>
+</div>
+</body>
