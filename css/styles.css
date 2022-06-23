@@ -2,34 +2,9 @@ body {
   font-family:Arial, Helvetica, sans-serif;
   font-weight: bolder;
   text-align: center;
-  color:rgb(251, 250, 253);
-  background-image: url(cassette-futurism.jpg);
+  color:rgb(0, 0, 0);
+  background-image: url(DonutWallpaper2.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: inherit;
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-.btn-grid {
-  display: grid;
-}
-
-.btn {
-  background-color: transparent;
-  border-color: transparent;
-  color:rgb(248, 36, 220);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bolder;
-  font-size: larger;
-}
-
-.btn:hover {
-  border-color:rgb(248, 3, 154)
-}
-
-.hide {
-  display: none;
 }
