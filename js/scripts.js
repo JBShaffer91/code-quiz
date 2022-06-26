@@ -14,15 +14,15 @@ window.onload = function() {
   let submit = document.getElementById("submit");
   submit.onclick = function(event) {
     event.preventDefault();
-    if ("q5" === 3) {
+    if ("mc5" === 3) {
       js.removeAttribute("style");
-    } else if (2 === true) {
+    } else if ("mc5" === 2) {
       rb.removeAttribute("style");
     } else {
       cs.removeAttribute("style");
     }
   };
-  
+
   let reset = document.getElementById("reset");
   reset.onclick = function(event) {
     window.location.reload(true);
