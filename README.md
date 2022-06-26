@@ -28,7 +28,7 @@ _Make sure you're in the code-quiz folder and open in VS Code}_
 
 ## Known Bugs
 
-* Uncaught SytaxError: Unexpected identifier, scripts.js:75
+* No known bugs.
 
 ## License
 
