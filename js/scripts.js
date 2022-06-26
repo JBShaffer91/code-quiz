@@ -11,21 +11,20 @@ window.onload = function() {
   let cs = document.getElementById("cs");
   cs.style.display = "none";
 
-  const form = document.querySelector("form");
-  form.onsubmit = function(event) {
+  let submit = document.getElementById("submit");
+  submit.onclick = function(event) {
     event.preventDefault();
-
-  let steak = 1
-  let burger = 2
-  let pizza = 3
-    
-  const q5 = parseInt(document.getElementById("q5").value);
-    if (q5 === 1) {
+    if ("q5" === 3) {
       js.removeAttribute("style");
-    } else if (q5 === 2) {
+    } else if (2 === true) {
       rb.removeAttribute("style");
-    } else (q5 === 3) {
+    } else {
       cs.removeAttribute("style");
     }
+  };
+  
+  let reset = document.getElementById("reset");
+  reset.onclick = function(event) {
+    window.location.reload(true);
   }
-}
+};
