@@ -1,6 +1,6 @@
 # code-quiz
 
-#### By _**{Justin Shaffer}**_
+#### By Justin Shaffer
 
 #### _{Watch Your Language}_
 
@@ -10,29 +10,29 @@
 
 * _HTML_
 * _CSS_
-*_JavaScript_
+* _JavaScript_
 
 ## Description
 
-_{This is a quiz designed to match a person's personality to the best programming language for them to get started with. It's designed to be a fun way to engage with users and collect data which could help developers learn how to better assist with students' coding journey.}_
+This is a quiz designed to match a person's personality to the best programming language for them to get started with. It's designed to be a fun way to engage with users and collect data which could help developers learn how to better assist with students' coding journey.
 
 ## Setup/Installation Requirements
 
 * _git bash_
 * _VS Code_
 
-_{Copy link https://github.com/JBShaffer91/code-quiz.git and open Git Bash._
+Copy link https://github.com/JBShaffer91/code-quiz.git and open Git Bash.
 _cd ~/Desktop_
 _git clone https://github.com/JBShaffer91/code-quiz.gitt_
 _Make sure you're in the code-quiz folder and open in VS Code}_
 
 ## Known Bugs
 
-* _Uncaught SytaxError: Unexpected identifier, scripts.js:75_
+* Uncaught SytaxError: Unexpected identifier, scripts.js:75
 
 ## License
 
-_{If there are any issues with this application you may reach out to me any time at justinbshaffer91@gmail.com}_
+If there are any issues with this application you may reach out to me any time at justinbshaffer91@gmail.com
 
 MIT License
 
